@@ -35,29 +35,37 @@
                 <svg class="header__icon-menu" width="40" height="40"> 
                     <use href="./images/symbol-defs.svg#menu_button">
                     </use> </svg> </button>
-            <div class="header__mobile-menu">
-                <button type="button" class="header__close-button">
-                    <svg class="header__icon-close" width="20px" height="20px">
+            <div class="header__mobile-menu is-hidden">
+                <div class="container">
+                     <div class="mobile-menu-top">
+                        <button type="button" class="header__close-button">
+                        <svg class="header__icon-close" width="20px" height="20px">
                         <use href="./images/symbol-defs.svg#close"></use>
-                    </svg>
-                </button>
-                <nav class="menu-navigation">
-                    <ul class="menu-navigation__list list">
-                        <li class="menu-navigation__item"> <a href="./index.html" class="menu-navigation__link current">Студия</a></li>
+                         </svg>
+                        </button>
+                        <nav class="menu-navigation">
+                        <ul class="menu-navigation__list list">
+                        <li class="menu-navigation__item"> <a href="./index.html" class="menu-navigation__link">Студия</a></li>
                         <li class="menu-navigation__item"> <a href="./portfolio.html" class="menu-navigation__link">Портфолио</a></li>
                         <li class="menu-navigation__item"> <a href="" class="menu-navigation__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="menu__contacts list">
-                    <li class="menu__item"><a href="mailto:info@devstudio.com" class="menu__link"> 
-                    <svg class="menu__icon-mail" width="16" height="12">
-                        <use href="./images/symbol-defs.svg#mail"></use>
-                    </svg> info@devstudio.com</a></li>
-                    <li class="menu__item"><a href="tel:+380961111111" class="menu__link"> 
-                    <svg class="menu__icon-tel" width="10" height="16">
-                        <use href="./images/symbol-defs.svg#tel"></use>
-                    </svg> +38 096 111 11 11</a></li>
-                </ul>
+                        </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu-bottom">
+                        <ul class="menu__contacts list">
+                        <li class="menu__item"><a href="tel:+380961111111" class="menu__link-tel"> 
+                        +38 096 111 11 11</a></li>
+                        <li class="menu__item"><a href="mailto:info@devstudio.com" class="menu__link-mail"> 
+                        info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="mobile-menu-social-list list">
+                            <li class="mobile-menu-social-item"> <a href="" class="mobile-menu-social-link">Instagram</a></li>
+                            <li class="mobile-menu-social-item"> <a href="" class="mobile-menu-social-link">Twitter</a></li>
+                            <li class="mobile-menu-social-item"> <a href="" class="mobile-menu-social-link">Facebook</a></li>
+                            <li class="mobile-menu-social-item"> <a href="" class="mobile-menu-social-link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                 </div>
             </div>
         </div>
       
@@ -120,7 +128,7 @@
             </div>
         </section>
         <!--секція різновди робіт-->
-        <!-- <section class="produce">
+        <section class="produce">
             <div class="container produce__foto">
                 <h2 class="produce__title">Чем мы занимаемся</h2>
             <ul class="produce__list">
@@ -138,7 +146,7 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!--секція команда-->
         <section class="team">
             <div class="container team__container">
@@ -344,7 +352,7 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="beckdrop is-hidden" data-modal>
+    <div class="beckdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-title">
             Залиште свої дані, ми вам передзвонимо
@@ -397,6 +405,7 @@
         </button>
       </div>  
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
