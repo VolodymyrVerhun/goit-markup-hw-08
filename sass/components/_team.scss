@@ -8,7 +8,9 @@
       padding-bottom: 94px;}
   }
   .team__list {
-    display: flex;
+    display: block;
+    @media screen and (min-width: 768px) {
+    display: flex;}
     flex-wrap: wrap;
   }
   .team__box {
